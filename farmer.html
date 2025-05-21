@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Фермер</title>
+  <style>
+    body {
+      margin: 0;
+      background: linear-gradient(to bottom, #c5e1a5, #f1f8e9);
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      text-align: center;
+    }
+
+    .farmer-box {
+      background: white;
+      padding: 30px;
+      border-radius: 25px;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+      transition: transform 0.3s ease;
+    }
+
+    .farmer-box:hover {
+      transform: scale(1.05);
+    }
+
+    .farmer-box img {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      border: 4px solid #8bc34a;
+      box-shadow: 0 0 15px rgba(0,0,0,0.3);
+    }
+
+    .title {
+      margin-top: 20px;
+      font-size: 26px;
+      color: #33691e;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="farmer-box">
+    <img src="https://www.svgrepo.com/show/207888/farmer.svg" alt="Фермер">
+    <div class="title">ФЕРМЕР</div>
+  </div>
+
+</body>
+</html>
