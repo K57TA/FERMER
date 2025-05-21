@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Взаимодействие</title>
+  <style>
+    body {
+      margin: 0;
+      background: linear-gradient(to top, #ffecb3, #fffde7);
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .section {
+      margin: 10px;
+      padding: 25px 20px;
+      width: 260px;
+      border-radius: 20px;
+      text-align: center;
+      color: white;
+      font-size: 18px;
+      font-weight: bold;
+      box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+      transform: translateY(100px);
+      opacity: 0;
+      animation: riseUp 0.6s ease forwards;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .section:nth-child(1) { background: #f06292; animation-delay: 0.2s; }
+    .section:nth-child(2) { background: #4dd0e1; animation-delay: 0.4s; }
+    .section:nth-child(3) { background: #81c784; animation-delay: 0.6s; }
+    .section:nth-child(4) { background: #ffb74d; animation-delay: 0.8s; }
+
+    .section:hover {
+      transform: scale(1.08);
+      box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
+    }
+
+    @keyframes riseUp {
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="section">ДОБАВЛЕНИЕ В КЛАН<br><small>(850G)</small></div>
+  <div class="section">ДУЭЛЬКА<br><small>(300G)</small></div>
+  <div class="section">ДРУЗЬЯ<br><small>(250G)</small></div>
+  <div class="section">АВАТАРКА<br><small>(150G)</small></div>
+
+</body>
+</html>
